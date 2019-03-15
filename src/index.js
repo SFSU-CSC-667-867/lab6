@@ -12,6 +12,7 @@ const rootReducer = combineReducers({
 });
 
 const store = createStore(rootReducer);
+window.store = store;
 
 ReactDOM.render(
   <Provider store={store}>
